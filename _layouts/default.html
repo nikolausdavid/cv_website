@@ -27,15 +27,15 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.14.1"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-    
+
     <style>
-      #vis.vega-embed {
+      #visu.vega-embed {
         width: 100%;
         display: flex;
       }
   
-      #vis.vega-embed details,
-      #vis.vega-embed details summary {
+      #visu.vega-embed details,
+      #visu.vega-embed details summary {
         position: relative;
       }
     </style>
@@ -90,8 +90,8 @@
                               + '</div>');
               throw error;
           }
-          const el = document.getElementById('vis');
-          vegaEmbed("#vis", spec, embedOpt)
+          const el = document.getElementById('visu');
+          vegaEmbed("#visu", spec, embedOpt)
             .catch(error => showError(el, error));
         })(vegaEmbed);
     
