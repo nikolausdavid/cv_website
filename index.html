@@ -2,34 +2,65 @@
 layout: default
 title: David Harrieder
 date: September 2023
-Portfolio Website: 
+Abstract: Portfolio Website
 ---
-<p class="Section">Trendcompass</p>
+<p class="Section">P R E V I O U S  E X P E R I E N C E</p>
     <p class="BodyText">
-        In the following you can take a look at my Stock Trading Indicator Compass built with Python.
-        On the x-Axis you can see the Momentum of the Stocks, which is computed by the current stock price 
+        Student Consultant at intouchConsult<br>
+        <ul>
+            <li>First contact with clients via external projects</li>
+            <li>Strong learning-curve due to active collaboration</li>
+            <li>Further development of social skills</li>
+        </ul>
+
+    </p>
+
+<p class="Section">E D U C A T I O N</p>
+    <p class="BodyText">
+        B. Sc. Digital Business at the University of Regensburg<br>
+        <ul>
+            <li>Completed second semester</li>
+            <li>Major: Financial Management</li>
+            <li>Inter alia: Compulsory Module Group: Data Analytics</li>
+        </ul>
+
     </p>
 
     <p class="BodyText">
-        This Trading Compass is angelehnt to the "Tradingkompass" by HSBC on this website. 
+        Text text david harrieder 
     </p>
 
     <p class="BodyText">
-    When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
-    \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
+        Text in the Middle of the website i hope so at least. 
     </p>
 
 <p class="SubSection">Sample Work: Trendcompass</p>
     <p class="BodyText Justified">
         In the following you can have a first look at my own creation of the Trendcompass, which I have first seen at the website of <a href="https://www.hsbc-zertifikate.de/home/trendkompass.html#!/">HSBC</a>
         With this Trendcompass you have the ability to analyze financial stock data from the past and thus discover possible price trends in the stock market.
-        The interactive Chart clearly shows the relative strength according to Levy and the momentum of S&P 500 shares. The Interactivtiy of the Chart, thus zooming in and out, as well as draging the chart to different positions is possible due to the Usage of the Vega-Altair Module in Python.
+        The interactive Chart clearly shows the relative strength according to Levy and the momentum of S&P 500 shares. The Interactivtiy of the Chart, thus zooming in and out, as well as draging the chart to different positions is possible due to the Usage of the <a href="https://altair-viz.github.io/index.html">Vega-Altair</a> Module in Python.
         Please take into strong account that the past performance of an underlying base value is not a reliable indicator of future performance. The Purpose of this Implementation is mainly to showcase my expertise in working with Data and my Interest in the Financial Industry.
     </p>
 
 <p class="SubSection">How the Trendcompass works</p>
     <p class="BodyText Justified">
-        
+        In Levy's relative strength concept, the current closing price of the underlying is set in relation to the average of the closing prices of the last 27 weeks. This is a long-term, trend-following approach.
+        A relative strength value greater than 1 means that the current closing price of an underlying base calue is above the average price of the last 27 weeks, which could indicate an upward stock trend.
+        Conversely, values smaller than 1 indicate a below-average development within the last 27 weeks.
+
+    </p>
+
+    <p class="BodyText Justified">
+        Momentum, on the other hand, puts the current closing price in relation to just one past price - in this case, the closing price four weeks ago. 
+        A coefficient greater than 1 indicates that the current price of the respective underlying is higher than 4 weeks ago, which could indicate an upward trend. Similar to Levy's relative strength, values smaller than 1 indicate a negative price development of the underlying base value within the period under consideration. 
+    </p>
+
+    <p class="BodyText Justified">
+        According to this concept, the upper right quadrant contains the stocks for which positive price developments can be identified both according to the long-term concept of relative strength according to Levy and measured by the shorter-term momentum.
+
+        Stable trends are advantageous for both methods. If, on the other hand, a certain degree of trend continuity is lacking or if there are rapid trend changes, this impairs the informative value of the two concepts.
+
+        The trend compass initially represents a snapshot, i.e. the values displayed reflect the situation at a fixed point in time - The Chart on my website is updated every Monday Morning (CEST)
     </p>
 
 
