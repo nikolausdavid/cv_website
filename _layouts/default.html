@@ -63,7 +63,7 @@
     
       </script>
       <script>
-        (function(vegaEmbed) {
+        (function(vegaEmbed_leaderboard) {
           var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "stroke": "transparent"}}, "layer": [{"mark": {"type": "point", "color": "red"}, "encoding": {"x": {"axis": {"grid": false}, "field": "Mean", "scale": {"zero": false}, "title": "Levy: blue, Mean: red, Momentum: green", "type": "quantitative"}, "y": {"axis": {"grid": true}, "field": "Stock", "sort": "-x", "title": "", "type": "nominal"}}, "title": "List of Best Performers"}, {"mark": {"type": "point", "color": "green"}, "encoding": {"x": {"axis": {"grid": false}, "field": "Momentum", "scale": {"zero": false}, "type": "quantitative"}, "y": {"axis": {"grid": true}, "field": "Stock", "sort": {}, "type": "nominal"}}}, {"mark": {"type": "point", "color": "blue"}, "encoding": {"x": {"axis": {"grid": false}, "field": "Levy", "scale": {"zero": false}, "type": "quantitative"}, "y": {"axis": {"grid": true}, "field": "Stock", "sort": {}, "type": "nominal"}}}], "data": {"name": "data-06bd94470e86dc92d83701bec2d0e20b"}, "height": {"step": 20}, "$schema": "https://vega.github.io/schema/vega-lite/v5.14.1.json", "datasets": {"data-06bd94470e86dc92d83701bec2d0e20b": [{"Stock": "Akamai", "Momentum": 1.0419492518876876, "Levy": 1.185512869574278, "Mean": 1.113731060730983}, {"Stock": "Activision Blizzard", "Momentum": 1.0234281530404887, "Levy": 1.1068540657312798, "Mean": 1.0651411093858842}, {"Stock": "Aflac", "Momentum": 1.023196509587892, "Levy": 1.1006649266426147, "Mean": 1.0619307181152533}, {"Stock": "Adobe Inc.", "Momentum": 0.9678820217297234, "Levy": 1.1268586577134636, "Mean": 1.0473703397215934}, {"Stock": "Airbnb", "Momentum": 1.04791723060868, "Levy": 1.0434341816832053, "Mean": 1.0456757061459427}, {"Stock": "AbbVie", "Momentum": 1.0360171815857053, "Levy": 1.0456121804339242, "Mean": 1.040814681009815}, {"Stock": "Accenture", "Momentum": 0.9849801898687652, "Levy": 1.0562000292142564, "Mean": 1.0205901095415109}, {"Stock": "ADP", "Momentum": 0.9455863701860057, "Levy": 1.055643060312898, "Mean": 1.0006147152494518}, {"Stock": "Air Products and Chemicals", "Momentum": 0.9888912893608975, "Levy": 0.9983843647848384, "Mean": 0.993637827072868}, {"Stock": "ADM", "Momentum": 0.9518981172556861, "Levy": 0.9875085733090949, "Mean": 0.9697033452823904}, {"Stock": "3M", "Momentum": 0.9320015208961652, "Levy": 0.9624523572072718, "Mean": 0.9472269390517185}, {"Stock": "Abbott", "Momentum": 0.9548594284626811, "Levy": 0.9325116213611282, "Mean": 0.9436855249119047}, {"Stock": "Allegion", "Momentum": 0.9409018110079586, "Levy": 0.943172717556349, "Mean": 0.9420372642821537}, {"Stock": "A. O. Smith", "Momentum": 0.9123179602811838, "Levy": 0.9282123004645181, "Mean": 0.920265130372851}, {"Stock": "Agilent Technologies", "Momentum": 0.9290360687393697, "Levy": 0.8925991179744674, "Mean": 0.9108175933569186}, {"Stock": "Alexandria Real Estate Equities", "Momentum": 0.8746653284307152, "Levy": 0.8589436131535639, "Mean": 0.8668044707921396}, {"Stock": "Align Technology", "Momentum": 0.8324318142813176, "Levy": 0.8990228939839761, "Mean": 0.8657273541326469}, {"Stock": "Alaska Air Group", "Momentum": 0.8930697428200068, "Levy": 0.8272398268451168, "Mean": 0.8601547848325618}, {"Stock": "Albemarle Corporation", "Momentum": 0.8889228189851495, "Levy": 0.8237828047687785, "Mean": 0.856352811876964}, {"Stock": "AES Corporation", "Momentum": 0.890624998336924, "Levy": 0.7682981186926418, "Mean": 0.8294615585147829}]}};
           var embedOpt = {"mode": "vega-lite"};
     
@@ -76,9 +76,9 @@
               throw error;
           }
           const el = document.getElementById('vis');
-          vegaEmbed("#vis", spec, embedOpt)
+          vegaEmbed_leaderboard("#vis", spec, embedOpt)
             .catch(error => showError(el, error));
-        })(vegaEmbed);
+        })(vegaEmbed_leaderboard);
     
       </script>
 
