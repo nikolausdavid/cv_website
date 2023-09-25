@@ -1,5 +1,8 @@
 # David Harrieder
-![Alt text](./LatexJekyll.png?raw=true "David Harrieder Portfolio Website")
+![Alt text](./visualization.svg?raw=true "Trendcompass, Portfolio Website")
+![Alt text](./bestperf.png?raw=true "30 Best Performing Stocks")
+
+
 ## Visit my Website now
 [Try it here](https://nikolausdavid.github.io)
 
