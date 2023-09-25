@@ -1,8 +1,8 @@
 # David Harrieder
 ![Alt text](./visualization.svg?raw=true "Trendcompass, Portfolio Website")
-![Alt text](.cv_website/bestperf.png?raw=true "30 Best Performing Stocks")
+![Alt text](./bestperf.png?raw=true "30 Best Performing Stocks")
 
-![30 Best Performing Stocks](./cv_website/visualization.svg)
+![30 Best Performing Stocks](./visualization.svg)
 
 
 ## Visit my Website now
