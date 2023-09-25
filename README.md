@@ -3,8 +3,8 @@
 ![Chart of Trendcompass](./bestperf.png)
 
 
-## Visit my Website now
-[Try it here](https://nikolausdavid.github.io)
+## [Visit my Website now](https://nikolausdavid.github.io)
+[Link to the Website](https://nikolausdavid.github.io)
 
 ### Data
 The Data is updated every monday morning
