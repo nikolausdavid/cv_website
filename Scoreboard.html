@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.14.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "stroke": "transparent"}}, "layer": [{"mark": {"type": "point", "color": "red"}, "encoding": {"x": {"axis": {"grid": false}, "field": "Mean", "scale": {"zero": false}, "title": "Levy: blue, Mean: red, Momentum: green", "type": "quantitative"}, "y": {"axis": {"grid": true}, "field": "Stock", "sort": "-x", "title": "", "type": "nominal"}}, "title": "List of Best 30 Stocks"}, {"mark": {"type": "point", "color": "green"}, "encoding": {"x": {"axis": {"grid": false}, "field": "Momentum", "scale": {"zero": false}, "type": "quantitative"}, "y": {"axis": {"grid": true}, "field": "Stock", "sort": {}, "type": "nominal"}}}, {"mark": {"type": "point", "color": "blue"}, "encoding": {"x": {"axis": {"grid": false}, "field": "Levy", "scale": {"zero": false}, "type": "quantitative"}, "y": {"axis": {"grid": true}, "field": "Stock", "sort": {}, "type": "nominal"}}}], "data": {"name": "data-5616cee9afdb5a1710ccfdc13b3a4830"}, "height": {"step": 20}, "$schema": "https://vega.github.io/schema/vega-lite/v5.14.1.json", "datasets": {"data-5616cee9afdb5a1710ccfdc13b3a4830": [{"Stock": "Constellation Energy", "Momentum": 1.0417972687752015, "Levy": 1.2070447100752666, "Mean": 1.124420989425234}, {"Stock": "Meta Platforms", "Momentum": 1.0699793976506342, "Levy": 1.1681577677163353, "Mean": 1.1190685826834847}, {"Stock": "Synopsys", "Momentum": 1.0803548088359394, "Levy": 1.1484320834006783, "Mean": 1.1143934461183087}, {"Stock": "WestRock", "Momentum": 1.0402857099260603, "Levy": 1.178454493276136, "Mean": 1.1093701016010982}, {"Stock": "Western Digital", "Momentum": 1.070094567519286, "Levy": 1.1431954436143603, "Mean": 1.1066450055668233}, {"Stock": "Arista Networks", "Momentum": 1.0351795690600867, "Levy": 1.1678113269165853, "Mean": 1.101495447988336}, {"Stock": "Palo Alto Networks", "Momentum": 1.0492003898868125, "Levy": 1.1534542601080418, "Mean": 1.1013273249974271}, {"Stock": "Cboe Global Markets", "Momentum": 1.0610472095923544, "Levy": 1.1385943469840751, "Mean": 1.0998207782882148}, {"Stock": "Eli Lilly and Company", "Momentum": 0.9680811485486557, "Levy": 1.2308577363758804, "Mean": 1.099469442462268}, {"Stock": "Akamai", "Momentum": 1.039707693189051, "Levy": 1.1577681645724058, "Mean": 1.0987379288807284}, {"Stock": "McKesson", "Momentum": 1.0746481929162057, "Levy": 1.1211752463280298, "Mean": 1.0979117196221178}, {"Stock": "CF Industries", "Momentum": 1.0470739618797416, "Levy": 1.1486253293760258, "Mean": 1.0978496456278837}, {"Stock": "General Dynamics", "Momentum": 1.098153826315314, "Levy": 1.0953121718588807, "Mean": 1.0967329990870973}, {"Stock": "Jacobs Solutions", "Momentum": 1.0611631571953841, "Levy": 1.1310936598652077, "Mean": 1.096128408530296}, {"Stock": "Nvidia", "Momentum": 1.024648979847789, "Levy": 1.1672114753690197, "Mean": 1.0959302276084042}, {"Stock": "CME Group", "Momentum": 1.0530196859479835, "Levy": 1.1346824772163944, "Mean": 1.093851081582189}, {"Stock": "Packaging Corporation of America", "Momentum": 1.0630341300894899, "Levy": 1.1154716659609578, "Mean": 1.0892528980252238}, {"Stock": "Steel Dynamics", "Momentum": 1.1037783472000016, "Levy": 1.0745892196598263, "Mean": 1.089183783429914}, {"Stock": "Charter Communications", "Momentum": 1.0156662171845683, "Levy": 1.1621793740448105, "Mean": 1.0889227956146894}, {"Stock": "Old Dominion", "Momentum": 1.0100272144306004, "Levy": 1.1630292974702459, "Mean": 1.086528255950423}, {"Stock": "Textron", "Momentum": 1.0480221863063932, "Levy": 1.122890265104861, "Mean": 1.085456225705627}, {"Stock": "Molina Healthcare", "Momentum": 1.0537038855584127, "Levy": 1.1171388169740561, "Mean": 1.0854213512662345}, {"Stock": "Amgen", "Momentum": 1.040989641303856, "Levy": 1.1284025263992115, "Mean": 1.0846960838515338}, {"Stock": "UnitedHealth Group", "Momentum": 1.0928005922661372, "Levy": 1.0715506604133362, "Mean": 1.0821756263397369}, {"Stock": "Cadence Design Systems", "Momentum": 1.0585088009061059, "Levy": 1.104734769934823, "Mean": 1.0816217854204644}, {"Stock": "EQT", "Momentum": 1.011766035738231, "Levy": 1.1514023855784854, "Mean": 1.0815842106583582}, {"Stock": "FactSet", "Momentum": 1.0680015561428842, "Levy": 1.0897262038642228, "Mean": 1.0788638800035535}, {"Stock": "Alphabet Inc. (Class C)", "Momentum": 1.0266039165307166, "Levy": 1.1291734332162184, "Mean": 1.0778886748734675}, {"Stock": "Alphabet Inc. (Class A)", "Momentum": 1.0239027685672093, "Levy": 1.1262942296874283, "Mean": 1.0750984991273187}, {"Stock": "Aflac", "Momentum": 1.0328439097032558, "Levy": 1.1164987714405867, "Mean": 1.0746713405719213}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
